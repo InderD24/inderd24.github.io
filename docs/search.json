@@ -4,13 +4,34 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I grew up in the Lower Mainland and did my undergraduate degree in Mathematics and Computing Science at Simon Fraser University. During my time at SFU, I worked on a project with the Vancouver Fraser Port Authority, where my team and I submitted a paper to the Canadian Operational Research Society on using an LSTM machine learning model to predict cargo throughput six weeks in advance.\nI also completed a co-op with Fraser Health Authority, where I worked on integration pipelines that processed thousands of messages a day across different healthcare systems.\nMore recently, I founded Planarize, an AI takeoff and quoting platform built for window and door companies. We reduce the time it takes to create a quote from hours to seconds."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in the Lower Mainland and did my undergraduate degree in Mathematics and Computing Science at Simon Fraser University. During my time at SFU, I worked on a project with the Vancouver Fraser Port Authority, where my team and I submitted a paper to the Canadian Operational Research Society on using an LSTM machine learning model to predict cargo throughput six weeks in advance.\nI also completed a co-op with Fraser Health Authority, where I worked on integration pipelines that processed thousands of messages a day across different healthcare systems.\nMore recently, I founded Planarize, an AI takeoff and quoting platform built for window and door companies. We reduce the time it takes to create a quote from hours to seconds."
+  },
+  {
+    "objectID": "about.html#why-mds",
+    "href": "about.html#why-mds",
+    "title": "About",
+    "section": "Why MDS",
+    "text": "Why MDS\nSince my undergraduate degree, I have been interested in data science and machine learning. The Vancouver Fraser Port Authority project really showed me how data can be leveraged to solve real business problems and make an impact.\nI also enjoy the mix of mathematics, statistics, computer science, and business that comes with data science. I joined the UBC Master of Data Science program to further develop my skills in data science and machine learning."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of Data Science",
+    "text": "Outside of Data Science\nWhen I am not working on projects, completing school assignments, or studying for exams, you can find me playing basketball, running, learning the piano, playing chess, or watching sports, especially football, basketball, and hockey.\nI am currently training for a marathon in November. I also recently got a dog and enjoy spending time with him."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Indervir Dhillon",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hi, I’m Indervir! I’m a Master of Data Science student at UBC in Vancouver. Before this, I did my undergraduate degree in Mathematics and Computing Science at Simon Fraser University, where I worked on projects involving machine learning, forecasting, and software development. I am interested in building real-world applications using data science and machine learning.\nThats my dog Leo!"
   }
 ]

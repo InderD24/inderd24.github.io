@@ -2,4 +2,22 @@
 title: "About"
 ---
 
-About this site
+## Background
+
+I grew up in the Lower Mainland and did my undergraduate degree in Mathematics and Computing Science at Simon Fraser University. During my time at SFU, I worked on a project with the Vancouver Fraser Port Authority, where my team and I submitted a paper to the Canadian Operational Research Society on using an LSTM machine learning model to predict cargo throughput six weeks in advance.
+
+I also completed a co-op with Fraser Health Authority, where I worked on integration pipelines that processed thousands of messages a day across different healthcare systems.
+
+More recently, I founded Planarize, an AI takeoff and quoting platform built for window and door companies. We reduce the time it takes to create a quote from hours to seconds.
+
+## Why MDS
+
+Since my undergraduate degree, I have been interested in data science and machine learning. The Vancouver Fraser Port Authority project really showed me how data can be leveraged to solve real business problems and make an impact.
+
+I also enjoy the mix of mathematics, statistics, computer science, and business that comes with data science. I joined the UBC Master of Data Science program to further develop my skills in data science and machine learning.
+
+## Outside of Data Science
+
+When I am not working on projects, completing school assignments, or studying for exams, you can find me playing basketball, running, learning the piano, playing chess, or watching sports, especially football, basketball, and hockey.
+
+I am currently training for a marathon in November. I also recently got a dog and enjoy spending time with him.

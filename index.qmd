@@ -1,7 +1,12 @@
 ---
 title: "Indervir Dhillon"
+about:
+  template: jolla
+  image: images/leo.jpg
 ---
-![](images/leo.jpg){width=250px}
-This is a Quarto website.
+Hi, I'm Indervir! I'm a Master of Data Science student at UBC in Vancouver. 
+Before this, I did my undergraduate degree in Mathematics and Computing Science at Simon Fraser University, 
+where I worked on projects involving machine learning, forecasting, and software development. I am interested in building real-world applications using data science and machine learning.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Thats my dog Leo! 
+
