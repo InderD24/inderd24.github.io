@@ -1,0 +1,94 @@
+---
+title: "Penguin Body Size in Python"
+author: "Indervir Dhillon"
+date: 2026-09-23
+---
+
+How do average body mass and flipper length differ by penguin species
+and sex?
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
+collected by Kristen Gorman and Palmer Station Antarctica LTER.
+The data are available under the
+[CC0 licence](https://allisonhorst.github.io/palmerpenguins/LICENSE.html).
+
+Citation: Horst, A. M., Hill, A. P., & Gorman, K. B. (2020).
+*palmerpenguins: Palmer Archipelago (Antarctica) penguin data*.
+[https://doi.org/10.5281/zenodo.3960218](https://doi.org/10.5281/zenodo.3960218).
+
+## Check the data
+
+```{python}
+from palmerpenguins import load_penguins
+import matplotlib.pyplot as plt
+
+penguins = load_penguins()
+columns = ["species", "sex", "body_mass_g", "flipper_length_mm"]
+
+print("Number of penguins:", len(penguins))
+print("Missing values in the columns I will use:")
+print(penguins[columns].isna().sum())
+```
+
+Some rows are missing a measurement or a sex value. I check these
+before comparing groups.
+
+## Remove incomplete rows
+
+```{python}
+clean = penguins.dropna(subset=columns).copy()
+
+print("Rows kept:", len(clean))
+print("Rows removed:", len(penguins) - len(clean))
+print(clean[columns].head())
+```
+
+I use the same complete rows for the summary and plot.
+
+## Calculate group averages
+
+```{python}
+summary = (
+    clean.groupby(["species", "sex"], as_index=False)
+    .agg(
+        count=("body_mass_g", "size"),
+        mean_mass_g=("body_mass_g", "mean"),
+        mean_flipper_mm=("flipper_length_mm", "mean"),
+    )
+)
+
+print(summary.round(1).to_string(index=False))
+```
+
+Gentoo males have the highest average body mass of 5484.8 g, while
+Adelie females have the lowest average body mass of 3368.8 g. Within each species, males have a
+higher average body mass than females.
+
+Gentoo males have the longest average flipper length of 221.5 mm, 
+while Adelie females have the shortest of 187.8 mm.
+Within each species, similarly, males have longer average flipper
+lengths than females.
+
+## Plot average body mass
+
+```{python}
+#| label: fig-penguin-average-mass
+#| fig-cap: "Average body mass by penguin species and sex."
+
+mass_by_group = summary.pivot(
+    index="species",
+    columns="sex",
+    values="mean_mass_g",
+)
+
+ax = mass_by_group.plot.bar()
+ax.set_xlabel("Species")
+ax.set_ylabel("Average body mass (g)")
+ax.legend(title="Sex")
+plt.xticks(rotation=0)
+plt.tight_layout()
+plt.show()
+```
+
+The plot here shows the average body mass by penguin species and sex.
+We can see that Gentoo penguins have the highest average body mass in this sample.
