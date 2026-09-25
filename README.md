@@ -22,10 +22,10 @@ Rscript -e 'renv::restore(prompt = FALSE)'
 uv run quarto render
 ```
 
-The built website is in `docs/`. To view it locally, run:
+The built website is in `docs/`. To view it locally, run this command from the repository root:
 
 ```bash
-python3 -m http.server 8000 --directory docs
+uv run python -m http.server 8000 --directory docs
 ```
 
 Open http://localhost:8000 in a browser. Press Ctrl+C in the terminal to
@@ -39,4 +39,4 @@ packages include the data, so rendering does not download a separate data
 file. Package installation requires network access. The data source, citation, and CC0 licence are also documented in each post.
 
 ## AI Usage Statement
-I used OpenAI Codex to help with issues setting up the R and Python environments on my machine. I also used AI to debug code and fix errors I encountered while building this website. 
+I used OpenAI Codex to help with issues setting up the R and Python environments on my machine. I also used AI to debug code and fix errors I encountered while building this website.
