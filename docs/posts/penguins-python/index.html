@@ -206,7 +206,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Citation: Horst, A. M., Hill, A. P., &amp; Gorman, K. B. (2020). <em>palmerpenguins: Palmer Archipelago (Antarctica) penguin data</em>. <a href="https://doi.org/10.5281/zenodo.3960218">https://doi.org/10.5281/zenodo.3960218</a>.</p>
 <section id="check-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="check-the-data">Check the data</h2>
-<div id="f11c2661" class="cell" data-execution_count="1">
+<div id="45e2159c" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -230,7 +230,7 @@ dtype: int64</code></pre>
 </section>
 <section id="remove-incomplete-rows" class="level2">
 <h2 class="anchored" data-anchor-id="remove-incomplete-rows">Remove incomplete rows</h2>
-<div id="3b924fdf" class="cell" data-execution_count="2">
+<div id="462857eb" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>clean <span class="op">=</span> penguins.dropna(subset<span class="op">=</span>columns).copy()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Rows kept:"</span>, <span class="bu">len</span>(clean))</span>
@@ -251,7 +251,7 @@ Rows removed: 11
 </section>
 <section id="calculate-group-averages" class="level2">
 <h2 class="anchored" data-anchor-id="calculate-group-averages">Calculate group averages</h2>
-<div id="38f3b2da" class="cell" data-execution_count="3">
+<div id="3a28b462" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> (</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    clean.groupby([<span class="st">"species"</span>, <span class="st">"sex"</span>], as_index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    .agg(</span>
